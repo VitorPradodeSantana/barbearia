@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGENDAMENTO | BARBEARIA</title>
-</head>
-<body>
-  <h1>BARBEARIA</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/82af083c5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>AGENDAMENTO | BARBEARIA</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>
+        <a href="#">
+          <img
+            src="img/iconeMenorCortes.png"
+            alt="icone-menor-cortes-barbearia"
+          />
+        </a>
+      </h1>
+
+      <nav>
+        <ul id="itens-menu-mobile">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Agendamento</a></li>
+          <li><a href="servicos">Serviços</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="menu-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </header>
+
+    <main id="login">
+      <div class="container">
+        <h2>Olá, <span>Vitor</span></h2>
+        <img src="img/man.png" alt="imagem-usuario" />
+      </div>
+    </main>
+
+    <section id="servicos">
+      <div class="container">
+        <div class="corte card">
+          <img src="img/cabelo.png" alt="icone-cabelo" />
+          <p>corte</p>
+        </div>
+
+        <div class="barba card">
+          <img src="img/barba.png" alt="icone-barba" />
+          <p>barba</p>
+        </div>
+
+        <div class="corteEBarba card">
+          <img src="img/cabeloEbarba.png" alt="icone-cabelo-e-barba" />
+          <p>Corte e Barba</p>
+        </div>
+
+        <div class="corteEBarba card">
+          <img src="img/cabeloEbarba.png" alt="icone-cabelo-e-barba" />
+          <p>Corte e Barba</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="agendamento">
+      <button id="btn-agendamento">agendamento</button>
+    </section>
+
+    <script src="script/script.js"></script>
+  </body>
 </html>

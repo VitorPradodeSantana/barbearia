@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --amerelo-principal: #ffff00;
+  --amarelo-secundario: #eedd82;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 360px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #696969;
+}
+
+/* -------------------------- cabecalho ------------------ */
+
+.cabecalho {
+  overflow: hidden;
+  background-color: var(--amerelo-principal);
+  position: relative;
+}
+
+.cabecalho h1 {
+  text-align: center;
+}
+
+.cabecalho img {
+  width: 50px;
+  height: 50px;
+}
+
+.cabecalho #itens-menu-mobile {
+  display: none;
+}
+
+.cabecalho nav a {
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.cabecalho .menu-mobile {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 1rem;
+  padding-left: 10px;
+}
+
+.cabecalho .menu-mobile i {
+  color: #000;
+}
+
+.cabecalho .menu-mobile i:hover {
+  color: white;
+}
+
+.cabecalho .menu-mobile i {
+  font-size: 24px;
+}
+
+/* -------------------------- login ------------------ */
+#login div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 10px 0;
+
+  border-bottom: 2px solid var(--amerelo-principal);
+}
+
+#login img {
+  width: 50px;
+  height: 50px;
+}
+
+#login h2 {
+}
+
+/* -------------------------- servicos ------------------ */
+#servicos {
+}
+
+#servicos .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#servicos .card {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: var(--amarelo-secundario);
+
+  padding: 0.5rem 1rem;
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+#servicos .card img {
+  height: 100px;
+  width: 100px;
+}
+
+/* -------------------------- cabecalho ------------------ */
+#agendamento {
+  width: 300px;
+  margin: 50px auto;
+}
+
+#agendamento button {
+  width: 100%;
+  padding: 8px 12px;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: var(--amerelo-principal);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

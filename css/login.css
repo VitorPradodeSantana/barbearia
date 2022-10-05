@@ -1,0 +1,42 @@
+main,
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  width: 240px;
+  height: 240px;
+  margin: 100px auto;
+}
+
+main form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+main form label {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+main form input {
+  height: 32px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid #ffff00;
+  background-color: rgba(0, 0, 0, 0.771);
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+main form input[type='submit'] {
+  margin-top: 6px;
+  border: none;
+  color: #000;
+  background-color: #ffff00;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+}

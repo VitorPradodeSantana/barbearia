@@ -44,24 +44,60 @@
 
     <section id="servicos">
       <div class="container">
-        <div class="corte card">
-          <img src="img/cabelo.png" alt="icone-cabelo" />
-          <p>corte</p>
+        <div class="corte card flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/cabelo.png" alt="icone-cabelo" />
+              <p>corte</p>
+            </div>
+
+            <div class="flip-card-back">
+              <p>Corte de cabelo</p>
+              <span>R$ 25,00</span>
+            </div>
+          </div>
         </div>
 
-        <div class="barba card">
-          <img src="img/barba.png" alt="icone-barba" />
-          <p>barba</p>
+        <div class="barba card flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/barba.png" alt="icone-barba" />
+              <p>cabelo e barba</p>
+            </div>
+
+            <div class="flip-card-back">
+              <p>cabelo e barba</p>
+              <span>R$ 50,00</span>
+            </div>
+          </div>
         </div>
 
-        <div class="corteEBarba card">
-          <img src="img/cabeloEbarba.png" alt="icone-cabelo-e-barba" />
-          <p>Corte e Barba</p>
+        <div class="barba card flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/barba.png" alt="icone-barba" />
+              <p>barba</p>
+            </div>
+
+            <div class="flip-card-back">
+              <p>barba</p>
+              <span>R$ 20,00</span>
+            </div>
+          </div>
         </div>
 
-        <div class="corteEBarba card">
-          <img src="img/cabeloEbarba.png" alt="icone-cabelo-e-barba" />
-          <p>Corte e Barba</p>
+        <div class="penteados card flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/cabelo.png" alt="icone-penteados" />
+              <p>pentados</p>
+            </div>
+
+            <div class="flip-card-back">
+              <p>pentados</p>
+              <span>R$ 50,00</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -71,5 +107,16 @@
     </section>
 
     <script src="script/script.js"></script>
+    <script>
+      const divs = document.querySelectorAll('.card')
+
+      for (i = 0; i < divs.length; i++) {
+        divs[i].addEventListener('click', () => {
+          i.classList.toggle('rotation')
+        })
+      }
+
+      /**/
+    </script>
   </body>
 </html>

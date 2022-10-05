@@ -1,0 +1,80 @@
+main table thead,
+tr,
+th,
+thead,
+tbody {
+  background-color: #fff;
+  text-transform: uppercase;
+
+  font-size: 14px;
+}
+
+table {
+  width: 300px;
+  margin: 16px auto;
+  border: 2px solid #ffff00;
+}
+
+table tr {
+  height: 24px;
+}
+
+table tr button {
+  height: 24px;
+  width: 100%;
+  text-align: center;
+
+  border: none;
+}
+
+h2,
+h4 {
+  margin-top: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ffff00;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+form p {
+  display: flex;
+  width: 200px;
+}
+
+form label {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid #ffff00;
+  padding-bottom: 4px;
+}
+
+form input[type='datetime-local'] {
+  width: 100%;
+  border: none;
+  border-radius: 4px 0px 0px 4px;
+
+  margin-left: 12px;
+}
+
+form input[type='submit'] {
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0 4px 4px 0px;
+  padding: 0.4rem 1rem;
+  background-color: #ffff00;
+  color: #000;
+}
+
+#local {
+  margin-top: 32px;
+}
+
+#local iframe {
+  margin-top: 12px;
+  width: 360px;
+  height: 360px;
+}

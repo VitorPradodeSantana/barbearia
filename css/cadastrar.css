@@ -1,0 +1,39 @@
+.main h4 {
+  font-size: 1.5rem;
+  
+  margin-top: 16px;
+  margin-bottom: 50px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ffff00;
+}
+
+.main form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main form label {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.main input {
+  height: 32px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid #ffff00;
+  background-color: rgba(0, 0, 0, 0.771);
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.main form input[type='submit'] {
+  margin-top: 6px;
+  border: none;
+  color: #000;
+  background-color: #ffff00;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+}

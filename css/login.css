@@ -40,3 +40,15 @@ main form input[type='submit'] {
   font-weight: bolder;
   font-size: 18px;
 }
+
+.criarUsuario {
+  text-align: center;
+  color: #ffff00;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.criarUsuario:hover {
+  text-decoration: underline;
+}

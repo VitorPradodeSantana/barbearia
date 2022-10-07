@@ -173,7 +173,7 @@
       </table>
 
       <div id="horario" class="container">
-        <form action="">
+        <form action="" id="formAgendamento">
           <label for="horario">Horário:</label>
           <p>
             <select id="comboHorario">
@@ -222,6 +222,7 @@
     <script>
       const btns = document.getElementsByTagName('button')
       const comboHorario = document.getElementById('comboHorario')
+      const formularioAgendamento = document.getElementById('formAgendamento')
 
       for (i = 0; i < btns.length; i++) {
         let item = btns[i]
@@ -229,6 +230,23 @@
           item.classList.toggle('backgroundClick')
         })
       }
+
+      formularioAgendamento.addEventListener('submit', e => {
+        e.preventDefault()
+        let btnClicado =
+          document.getElementsByClassName('backgroundClick')[0].innerHTML
+        let comboHorario = document.getElementById('comboHorario')
+        let value = comboHorario.options[comboHorario.selectedIndex].value
+
+        let agendamento = {
+          dia: btnClicado,
+          horario: value
+        }
+
+        localStorage.setItem('agendamento', JSON.stringify(agendamento))
+
+        location.href = 'dataAgendamento.html'
+      })
     </script>
   </body>
 </html>

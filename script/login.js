@@ -12,16 +12,7 @@ formularioLogin.addEventListener('submit', e => {
     senha: senha
   }
 
-  console.log(usuario)
-
-  /*
-  fetch('../php/Login.php', {
-    method: 'POST',
-    body: usuario
-  }).then(response => {
-    console.log(response)
-  })
-  */
+  localStorage.setItem('Usuario', JSON.stringify(usuario))
 
   location.href = 'paginaPrincipal.html'
 })

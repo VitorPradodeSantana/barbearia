@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGENDAMENTO MARCADO | MENOR CORTES</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dataAgendamento.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>
+        <a href="paginaPrincipal.html">
+          <img
+            src="img/iconeMenorCortes.png"
+            alt="icone-menor-cortes-barbearia"
+          />
+        </a>
+      </h1>
+
+      <nav>
+        <ul id="itens-menu-mobile">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Agendamento</a></li>
+          <li><a href="servicos">Serviços</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="menu-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </header>
+    <main class="container main">
+      <header>
+        <img
+          src="img/iconeMenorCortes.png"
+          alt="icone-menor-cortes-barbearia"
+        />
+      </header>
+      <p>
+        O seu agendamento ficou para o dia
+        <span id="dia"></span>
+        no seguinte horário ->
+        <span id="horario"></span>
+
+        <a id="retornar" href="index.html">RETORNAR</a>
+      </p>
+    </main>
+    <script>
+      const dia = document.getElementById('dia')
+      const horario = document.getElementById('horario')
+      let agendamento = localStorage.getItem('agendamento')
+      let retornar = document.getElementById('retornar')
+
+      let objAgendamento = JSON.parse(agendamento)
+
+      dia.innerHTML = objAgendamento.dia
+      horario.innerHTML = objAgendamento.horario
+
+      retornar.onclick = () => {
+        localStorage.clear()
+      }
+    </script>
+  </body>
+</html>

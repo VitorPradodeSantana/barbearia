@@ -37,7 +37,7 @@
 
     <main id="login">
       <div class="container">
-        <h2>Olá, <span>Vitor</span></h2>
+        <h2>Olá, <span id="nomeUsuario">Vitor</span></h2>
         <img src="img/man.png" alt="imagem-usuario" />
       </div>
     </main>
@@ -109,6 +109,10 @@
     <script src="script/script.js"></script>
     <script>
       const divs = document.getElementsByClassName('card')
+      const userName = document.getElementById('nomeUsuario')
+      let usuario = localStorage.getItem('Usuario')
+      let objetoUsuario = JSON.parse(usuario)
+      let nomeDoUsuario = document.getElementById('nomeUsuario')
 
       console.log(divs)
 
@@ -118,6 +122,8 @@
           el.children[0].classList.toggle('rotation')
         })
       }
+
+      nomeDoUsuario.innerHTML = objetoUsuario.nome
     </script>
   </body>
 </html>

@@ -38,13 +38,14 @@
 
     <main class="container main">
       <h4>Cadastrar-se</h4>
-      <form action="">
+      <form action="" id="formularioCadastroUsuario">
         <label for="email">email</label>
         <input
           type="email"
           name="email"
           id="email"
           placeholder="Digite seu email ..."
+          required
         />
         <label for="nome">nome</label>
         <input
@@ -52,13 +53,15 @@
           name="nome"
           id="nome"
           placeholder="Digite seu nome ..."
+          required
         />
         <label for="nome">senha</label>
         <input
-          type="senha"
+          type="password"
           name="senha"
           id="senha"
           placeholder="Digite seu senha ..."
+          required
         />
         <input
           type="submit"
@@ -69,6 +72,18 @@
       </form>
     </main>
 
-    <script src="script/script.js"></script>
+    <script>
+      const form = document.getElementById('formularioCadastroUsuario')
+      const email = document.getElementById('email')
+      const nome = document.getElementById('nome')
+      const senha = document.getElementById('senha')
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        alert(`Usuário ${nome.value}, o seu cadastro foi feito com sucesso !`)
+
+        location.href = "index.html"
+      })
+    </script>
   </body>
 </html>

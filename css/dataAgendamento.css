@@ -1,0 +1,26 @@
+.main header {
+  width: 250px;
+  margin: 2rem auto;
+}
+
+.main p {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main p span {
+  color: #ffff00;
+  font-weight: bold;
+}
+
+.main a {
+  display: block;
+  color: #fff;
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}

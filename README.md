@@ -13,3 +13,4 @@ cabelo, penteado e barba
 O projeto veio de uma idéia real junto ao meu cabelereiro aonde ele já utiliza um sistema para agendamento de horário, porém o sistema não é customizado então neste 
 projeto feito procurei adicionar os estilos de acordo com oque o mesmo me passou, como cores e ícones que foram apresentados pelo mesmo
 
+![Imagem da tela de agendamento](./img/agendamento.png)
